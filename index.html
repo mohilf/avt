@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Timer Interface</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="menu-icon">☰</div>
+  <div class="profile-icon">👤</div>
+</header>
+
+<main>
+  <section class="timer-section">
+    <h1>Over Time</h1>
+    <div id="time" class="timer-display">01:00</div>
+    <div class="timer-controls">
+      <button id="startBtn">▶ Start</button>
+      <button id="resetBtn">⟲ Reset</button>
+    </div>
+  </section>
+
+  <section class="audio-section">
+    <h2>Voice Input</h2>
+    <div class="audio-controls">
+      <button id="recordBtn">🎤 Record</button>
+      <button id="playBtn" disabled>▶ Play</button>
+    </div>
+    <div id="waveform" class="waveform">📈 Audio waveform will show here</div>
+    <div id="transcript" class="transcript"></div>
+  </section>
+
+  <section class="panels">
+    <div class="panel left-panel">
+      <button>AI Control</button>
+      <button id="voiceCtrl">Voice Control</button>
+      <button>Tools</button>
+    </div>
+    <div class="panel right-panel">
+      <button id="setQuestion">Set Question</button>
+      <button id="setTimer">Set Timer</button>
+      <button>Help ?</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>A L P C G © 2025</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
